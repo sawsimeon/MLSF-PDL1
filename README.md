@@ -17,9 +17,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 ![Python][python-shield]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-![jquery-url][jquery]
 
 
 <!-- PROJECT LOGO -->
