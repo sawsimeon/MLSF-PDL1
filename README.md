@@ -46,7 +46,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Tools Used</a></li>
+        <li><a href="#tools-used">Tools Used</a></li>
       </ul>
     </li>
     <li>
@@ -55,6 +55,7 @@
         <li><a href="#conda">Create a miniconda environment</a></li>
         <li><a href="#clone">Clone the repo</a></li>
         <li><a href="#Installation">Install all the dependecies</a></li>
+        <li><a href="#Running">Run the test set as sdf file</a></li>
       </ul>
     </li>
 </details>
@@ -102,7 +103,7 @@ conda activate <env_name>
    ```sh
    pip install -r requirements.txt
    ```
-## 4. Start the app
+## 4. <span id="Running">Run the Test Set</span>
    ```sh
    python test.py test.sdf
    ```
