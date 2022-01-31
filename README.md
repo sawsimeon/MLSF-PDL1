@@ -29,8 +29,9 @@
 
   <p align="center">
     <span style="font-weight:bold; font-style:italic">Based on Patent Data </span> 
-    <br /><br>
-    <a href="https://academic.oup.com/bioinformatics/article/37/15/2134/6126797"><strong>Powered by DeepCoy generator »</strong></a><br>
+    <br />
+    <br>
+    <a href="https://academic.oup.com/bioinformatics/article/37/15/2134/6126797"><strong>Powered by DeepCoy Generator »</strong></a><br>
     <br />
     <br />
 
@@ -64,12 +65,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-We hypothesise that applying the latest advances observed in studies based on other targets will lead to highly accurate target-specific ML SFs for PDL1. For instance, a large number of decoys (assumed inactives) in the training set boosts SBVS performance of ML SFs, but this has never been investigated for PDL1. Thus, it is not known if training should be carried out with actives only, or supplementing the latter with experimentally validated inactives, property-matched decoys or random property-unmatched decoys. Likewise, regression-based ML SFs are still to be applied to PDL1 despite the dependent variable to predict, pIC50, being real-valued. This is probably due to the most popular SBVS benchmarks not having, by contrast, employed real-valued potency to evaluate performance, but only sets of actives and decoys with binary classification metrics. As a real-valued variable contains more information than any dichotomised version of that variable, it stands to reason that regression models should perform better than classification models, other things being equal. We will thus evaluate regression models that also exploit the information about the chemical diversity of inactives, which we call inactive-enriched regression-based ML SFs. Another novel aspect of our study is investigating which combinations of featurisation schemes and supervised learning algorithms are most predictive for SBVS on PDL1. 
+We hypothesise that applying the latest advances observed in studies based on other targets will lead to highly accurate target-specific MLSFs for PDL1. For instance, a large number of decoys (assumed inactives) in the training set boosts SBVS performance of MLSFs, but this has never been investigated for PDL1. Thus, it is not known if training should be carried out with actives only, or supplementing the latter with experimentally validated inactives, property-matched decoys or random property-unmatched decoys. Likewise, regression-based MLSFs are still to be applied to PDL1 despite the dependent variable to predict, pIC50, being real-valued. This is probably due to the most popular SBVS benchmarks not having, by contrast, employed real-valued potency to evaluate performance, but only sets of actives and decoys with binary classification metrics. As a real-valued variable contains more information than any dichotomised version of that variable, it stands to reason that regression models should perform better than classification models, other things being equal. We will thus evaluate regression models that also exploit the information about the chemical diversity of inactives, which we call inactive-enriched regression-based ML SFs. Another novel aspect of our study is investigating which combinations of featurisation schemes and supervised learning algorithms are most predictive for SBVS on PDL1. 
 
 ### Tools Used
 
 * [Python](https://www.python.org/)
-* [JupyterNotebook](https://jupyter.org/)
+* [Jupyter](https://jupyter.org/)
 * [R](https://www.r-project.org/)
 
 
