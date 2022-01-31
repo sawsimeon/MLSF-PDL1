@@ -1,13 +1,13 @@
 # Data 
 
 We have prepared different datasets based on different several sources (ZINC, DeepCoy Generator and PubChem).
-These datasets match the dataset utilised in our paper, Structure-based virtual screening for PD-L1 dimerizers is boosted by inactive-enriched machine-learning models exploiting patent data.
+These datasets match the dataset utilised in our paper, Structure-based virtual screening for PDL1 dimerizers is boosted by inactive-enriched machine-learning models exploiting patent data.
 
 We have also provided several scripts to allow you to use your own dataset.
 
 # To use a provided dataset
 
-To process the provided datasets, run `extract_descriptors.py`. This allows you to extract PLEC and GRID which were utilized to build predictive model.
+To process the provided datasets, run `extract_descriptors.py`. This allows you to extract [PLEC](https://academic.oup.com/bioinformatics/article/35/8/1334/5092926) and [GRID](https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc02664a) which were utilized to build predictive model. These features needed the protein as a pdb file.
 
 ```
 python extract_descriptors.py
@@ -83,3 +83,18 @@ M  END
 $$$$
 ```
 
+## Featurization
+
+If you want to prepare your own test set, run `prepare_data.py` with the following arguments:
+
+```
+python prepare_data.py --data_path_sdf_file PATH_TO_DATA --save_dir_csv OUTPUT_CSV_path
+```
+
+The format taken by `prepare_data.py` for featurization is:
+
+```
+single docked pose as sdf file
+```
+
+There should be no other entries on a line other than the sdf file of the molecule to generate features for.
