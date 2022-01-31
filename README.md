@@ -53,9 +53,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#conda">Create a miniconda environment</a></li>
+        <li><a href="#conda">Create an environment and install all the dependencies</a></li>
         <li><a href="#clone">Clone the repo</a></li>
-        <li><a href="#Installation">Install all the dependecies</a></li>
         <li><a href="#Running">Run the test set as sdf file</a></li>
       </ul>
     </li>
@@ -82,10 +81,10 @@ We hypothesise that applying the latest advances observed in studies based on ot
 To get a local copy up and running make sure that you have installed **Anaconda** on your machine. If not check the link of installation: https://docs.anaconda.com/anaconda/install/index.html 
 
 ## 1. <span id="conda">Create a miniconda environment</span> 
-* Create a miniconda environment with a Python version 3.7
+* Create an environment and install all the dependencies with a Python version 3.6
 
 ```{sh}
-conda create --name <env_name> python=3.7
+conda create --name <envname> --file requirements.txt python=3.6
 ```
 when the installation is done activate the environment
 ```{sh}
@@ -100,11 +99,7 @@ conda activate <env_name>
   cd MLSF-PDL1
   ```
 
-## 3. <span id="Installation">Install all the dependencies</span>
-   ```sh
-   pip install -r requirements.txt
-   ```
-## 4. <span id="Running">Run the Test Set</span>
+## 3. <span id="Running">Run the Test Set</span>
    ```sh
    python test.py test.sdf
    ```
@@ -145,7 +140,7 @@ saw.simeon@inserm.fr
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[python-shield]:https://img.shields.io/badge/Python-3.7-blue?style=for-the-badge&logo=python
+[python-shield]:https://img.shields.io/badge/Python-3.6-blue?style=for-the-badge&logo=python
 [license-shield]: https://img.shields.io/badge/django-3.0.3-blue?style=for-the-badge&logo=django
 [license-url]: https://www.djangoproject.com/
 [linkedin-shield]:https://img.shields.io/badge/Bootstrap-4-blue?style=for-the-badge&logo=bootstrap
