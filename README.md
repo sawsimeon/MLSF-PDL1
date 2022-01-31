@@ -1,4 +1,4 @@
-# MLSF-PDL1
+# Structure-based virtual screening for PD-L1 dimerizers is bossted by inactive-enriched machien-learning models exploiting patent data
 
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -26,7 +26,6 @@
     <img src="https://github.com/sawsimeon/MLSF-PDL1/blob/main/MLSF_PDL1_logo.png" alt="Logo" >
   </a>
 
-  <h3 align="center" style="font-weight:bold">Structure-based virtual screening for PD-L1 dimerizers is bossted by inactive-enriched machien-learning models exploiting patent data</h3>
 
   <p align="center">
     <span style="font-weight:bold; font-style:italic">Based on Patent Data </span> 
@@ -47,7 +46,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Tools Used</a></li>
       </ul>
     </li>
     <li>
@@ -66,7 +65,7 @@
 ## About The Project
 We hypothesise that applying the latest advances observed in studies based on other targets will lead to highly accurate target-specific ML SFs for PDL1. For instance, a large number of decoys (assumed inactives) in the training set boosts SBVS performance of ML SFs, but this has never been investigated for PDL1. Thus, it is not known if training should be carried out with actives only, or supplementing the latter with experimentally validated inactives, property-matched decoys or random property-unmatched decoys. Likewise, regression-based ML SFs are still to be applied to PDL1 despite the dependent variable to predict, pIC50, being real-valued. This is probably due to the most popular SBVS benchmarks not having, by contrast, employed real-valued potency to evaluate performance, but only sets of actives and decoys with binary classification metrics. As a real-valued variable contains more information than any dichotomised version of that variable, it stands to reason that regression models should perform better than classification models, other things being equal. We will thus evaluate regression models that also exploit the information about the chemical diversity of inactives, which we call inactive-enriched regression-based ML SFs. Another novel aspect of our study is investigating which combinations of featurisation schemes and supervised learning algorithms are most predictive for SBVS on PDL1. 
 
-### Built With
+### Tools Used
 
 * [Python](https://www.python.org/)
 * [JupyterNotebook](https://jupyter.org/)
