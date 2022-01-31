@@ -1,4 +1,4 @@
-# Structure-based virtual screening for PD-L1 dimerizers is bossted by inactive-enriched machien-learning models exploiting patent data
+# Structure-based virtual screening for PD-L1 dimerizers is boosted by inactive-enriched machine-learning models exploiting patent data
 
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
