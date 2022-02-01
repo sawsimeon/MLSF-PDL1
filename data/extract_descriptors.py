@@ -27,8 +27,8 @@ def extract_plec_feature(ligand_file):
     return feature
 
 def extract_all_sdf_files(sdf_files_path, type):
-    os.chdir(sdf_files_path)
-    sdf_files = glob.glob("*.sdf")
+    
+    sdf_files = glob.glob("data/compounds/*.sdf")
     if (type == "GRID"):
         feature = Parallel(n_jobs = multiprocessing.cpu_count(), backend = "multiprocessing")(delayed(extract_grid_feature)(sdf_file) for sdf_file in tqdm(sdf_files))
     else:
