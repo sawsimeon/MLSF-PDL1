@@ -79,7 +79,7 @@ M  END
 ```
 Once you have the docked molecules. You can enrich them to the compounds folder. Thus, the compounds folder will only contain the docked poses. It is important to note that one molecule will need only one docked pose. You may select your docked pose by using PyMol or MOE software. Or you can select the dock pose based on the top score of SMINA (minimizedAffinity). The lower the score, the better the poses are. 
 
-## Molecule Docking
+# Molecule Docking
 
 If you want to prepare your own dataset, run `smina_docking.py` with the following syntax:
 
@@ -87,15 +87,15 @@ If you want to prepare your own dataset, run `smina_docking.py` with the followi
 python smina_docking.py
 ```
 
-## Featurization
+# Featurization
 
 If you want to extract the interaction features, whether PLEC or GRID and save it as a csv file, run `extract_descriptors.py` with the following arguments:
 
 ```
 # for PLEC features
-python data/extract_descriptors.py --type PLEC --csv_path data/features/PLEC_features.csv
+python extract_descriptors.py --type PLEC --csv_path PLEC_features.csv
 # for GRID features
-python data/extract_descriptors.py --type GRID --csv_path data/features/GRID_features.csv
+python extract_descriptors.py --type GRID --csv_path GRID_features.csv
 ```
 
 If you want to know what arguments is needed. you can run `extract_descriptors.py` with the following argument:
@@ -103,7 +103,6 @@ If you want to know what arguments is needed. you can run `extract_descriptors.p
 ```
 python data/extract_descriptors.py --help
 ```
-
 
 The format taken by the extract_descriptors is:
 
