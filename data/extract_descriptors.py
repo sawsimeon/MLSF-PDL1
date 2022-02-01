@@ -6,13 +6,12 @@ from deepchem.feat import RdkitGridFeaturizer
 from oddt.fingerprints import PLEC
 import oddt
 import glob
-from joblib import Parallel, delaye, delayed
+from joblib import Parallel, delayed
 from tqdm import tqdm
 import multiprocessing
 
 featurizer = RdkitGridFeaturizer(voxel_width=16.0, feature_types=["ecfp", "splif", "hbond", "salt_bridge"], ecfp_power=9,splif_power=9,flatten=True)
 protein = "data/protein/6NM8-receptor.pdb"
-ligand_file = "data/compounds/2__1000.sdf"
 
 
 def extract_grid_feature(ligand_file):
@@ -26,14 +25,17 @@ def extract_plec_feature(ligand_file):
     feature = PLEC(mol, receptor, size = 4092, depth_protein = 4, depth_ligand = 2, distance_cutoff = 4.5, sparse = False)
     return feature
 
-def extract_all_sdf_files(sdf_files_path, type):
-    
+def extract_all_sdf_files(type= "PLEC"):
     sdf_files = glob.glob("data/compounds/*.sdf")
     if (type == "GRID"):
         feature = Parallel(n_jobs = multiprocessing.cpu_count(), backend = "multiprocessing")(delayed(extract_grid_feature)(sdf_file) for sdf_file in tqdm(sdf_files))
     else:
         feature = Parallel(n_jobs = multiprocessing.cpu_count(), backend = "multiprocessing")(delayed(extract_plec_feature)(sdf_file) for sdf_file in tqdm(sdf_files))
     return feature
+
+
+plec_feature  = extract_all_sdf_files(type = "PLEC")
+gird_feature = extract_all_sdf_files(type = "GRID")
 
 
 
