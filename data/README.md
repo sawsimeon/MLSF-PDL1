@@ -19,7 +19,7 @@ Firstly, you may need to docked pose of your molecules. To dock your molecules u
 
 
 ```
-a single sdf file
+a single sdf file for each molecule
 ```
 
 For example:
@@ -79,15 +79,22 @@ M  END
 ```
 Once you have the docked molecules. You can enrich them to the compounds folder. Thus, the compounds folder will only contain the docked poses. It is important to note that one molecule will need only one docked pose. You may select your docked pose by using PyMol or MOE software. Or you can select the dock pose based on the top score of SMINA (minimizedAffinity). The lower the score, the better the poses are. 
 
+## Molecule Docking
+
+If you want to prepare your own dataset, run `smina_docking.py` with the following syntax:
+
+```
+python smina_docking.py
+```
+
 ## Featurization
 
-If you want to prepare your own test set, run `prepare_data.py` with the following arguments:
+If you want to prepare your own test set, run `extract_descriptors.py` with the following syntax:
 
 ```
-python prepare_data.py --data_path_sdf_file PATH_TO_DATA --save_dir_csv OUTPUT_CSV_path
+python extract_descriptors.py
 ```
-
-The format taken by `prepare_data.py` for featurization is:
+The format taken by the extract_descriptors is:
 
 ```
 single docked pose as sdf file
