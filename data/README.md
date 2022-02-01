@@ -101,7 +101,7 @@ python extract_descriptors.py --type GRID --csv_path GRID_features.csv
 If you want to know what arguments is needed. you can run `extract_descriptors.py` with the following argument:
 
 ```
-python data/extract_descriptors.py --help
+python extract_descriptors.py --help
 ```
 
 The format taken by the extract_descriptors is:
