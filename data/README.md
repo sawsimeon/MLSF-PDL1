@@ -93,9 +93,15 @@ If you want to extract the interaction features, whether PLEC or GRID and save i
 
 ```
 # for PLEC features
-python extract_descriptors.py PLEC path_to_save_csv_file
+python data/extract_descriptors.py --type PLEC --csv_path data/features/PLEC_features.csv
 # for GRID features
-python extract_descriptors.py GRID
+python data/extract_descriptors.py --type GRID --csv_path data/features/GRID_features.csv
+```
+
+If you want to know what arguments is needed. you can run `extract_descriptors.py` with the following argument:
+
+```
+python data/extract_descriptors.py --help
 ```
 
 
