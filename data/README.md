@@ -7,7 +7,7 @@ We have also provided several scripts to allow you to use your own dataset.
 
 # To use a provided dataset
 
-To process the provided datasets, run `extract_descriptors.py`. This allows you to extract [PLEC](https://academic.oup.com/bioinformatics/article/35/8/1334/5092926) and [GRID](https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc02664a) which were utilized to build predictive model. These features needed the protein as a pdb file.
+To process the provided datasets, run `extract_descriptors.py`. This allows you to extract [PLEC](https://academic.oup.com/bioinformatics/article/35/8/1334/5092926) and [GRID](https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc02664a) which were utilized to build predictive model. The protein structure is provided, which is 6NM8 (PDB ID). This script will only generate descriptors for the PDL1-specific interaction features.
 
 ```
 python extract_descriptors.py
