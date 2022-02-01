@@ -79,11 +79,8 @@ if __name__ == "__main__":
         csv_path = args.get('--csv_path')
     else:
         csv_path = ''
-
-
-
-    interaction_features = extract_all_sdf_files(type = type)
-    interaction_features.to_csv(csv_path, index = False)
+        
+    extract_all_sdf_files(type = type).to_csv(csv_path, index = False)
 
 
 
