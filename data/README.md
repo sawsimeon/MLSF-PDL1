@@ -89,11 +89,16 @@ python smina_docking.py
 
 ## Featurization
 
-If you want to prepare your own test set, run `extract_descriptors.py` with the following syntax:
+If you want to extract the interaction features, whether PLEC or GRID and save it as a csv file, run `extract_descriptors.py` with the following arguments:
 
 ```
-python extract_descriptors.py
+# for PLEC features
+python extract_descriptors.py PLEC path_to_save_csv_file
+# for GRID features
+python extract_descriptors.py GRID
 ```
+
+
 The format taken by the extract_descriptors is:
 
 ```
