@@ -15,12 +15,11 @@ python extract_descriptors.py
 
 # To use your own dataset
 
+Firstly, you may need to docked pose of your molecules. To dock your molecules using the SMINA, an autodock vina software, you may provide moleculs in the sdf format as an input file. Run `smina_docking.py` to obtained docked posses that will be docked into the compounds folder. The format taken by `smina_docking.py` is 
 
-
-The format taken by `extract_descriptors.py` is: 
 
 ```
-single docked pose as sdf file
+a single sdf file
 ```
 
 For example:
@@ -77,11 +76,8 @@ For example:
  21 22  1  0  0  0
  15 16  1  0  0  0
 M  END
-> <minimizedAffinity>
--6.39995
-
-$$$$
 ```
+Once you have the docked molecules. You can enrich them to the compounds folder. Thus, the compounds folder will only contain the docked poses. It is important to note that one molecule will need only one docked pose. You may select your docked pose by using PyMol or MOE software. Or you can select the dock pose based on the top score of SMINA (minimizedAffinity). The lower the score, the better the poses are. 
 
 ## Featurization
 
