@@ -79,7 +79,7 @@ M  END
 ```
 Once you have the docked molecules, you can enrich them to the compounds folder. Thus, the compounds folder will only contain the docked poses. It is important to note that one molecule will need only one docked pose. You may select your docked pose by using PyMol or MOE software. Or you can select the dock pose based on the top score of SMINA (minimizedAffinity). The lower the scores, the better the poses are. 
 
-# Molecule Docking
+# Molecule docking
 
 If you want to prepare your own dataset, run `smina_docking.py` with the following syntax:
 
