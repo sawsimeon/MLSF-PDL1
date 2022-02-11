@@ -77,7 +77,7 @@ For example:
  15 16  1  0  0  0
 M  END
 ```
-Once you have the docked molecules, you can enrich them to the compounds folder. Thus, the compounds folder will only contain the docked poses. It is important to note that one molecule will need only one docked pose. You may select your docked pose by using PyMol or MOE software. Or you can select the dock pose based on the top score of SMINA (minimizedAffinity). The lower the scores, the better the poses are. 
+Once you have the docked molecules, you can enrich them to the compounds folder. Thus, the compounds folder will only contain the docked poses. It is important to note that one molecule will need only one docked pose. You may select your docked pose by using PyMol or MOE software. Or you can select the dock pose based on the top score of SMINA (minimizedAffinity).  
 
 # Molecule docking
 
@@ -114,5 +114,5 @@ There should be no other entries on a line other than the sdf file of the molecu
 
 # Calculated features
 
-We provide calculated features for training and test set files from the Table 1 of the Manuscript. Each file will have as many rows as docked molecules + header. Then there will be the following columns: pIC50, molecule-ID and features (the latter with as many columns as features). Due to GitHub file size constraints, these 24 files (training test) X 6 partitions X 2 featurization can be downloded from the [zenodo](https://zenodo.org/). 
+We provide calculated features for training and test set files from the Table 1 of the Manuscript. Each file will have as many rows as docked molecules + header. Then there will be the following columns: pIC50, molecule-ID and features (the latter with as many columns as features). Due to GitHub file size constraints, these 24 files (training and  test) X 6 partitions X 2 featurization can be downloded from the [zenodo](https://zenodo.org/). 
 
