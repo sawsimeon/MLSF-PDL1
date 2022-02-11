@@ -3,7 +3,7 @@
 We have prepared different datasets based on different several sources (ZINC, DeepCoy Generator and PubChem).
 These datasets match the dataset utilised in our paper, Structure-based virtual screening for PDL1 dimerizers is boosted by inactive-enriched machine-learning models exploiting patent data.
 
-We have also provided several scripts to allow you to use your own dataset.
+We have also provided several scripts to allow you to utilize your own dataset. 
 
 # To use a provided dataset
 
