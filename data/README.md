@@ -114,5 +114,5 @@ There should be no other entries on a line other than the sdf file of the molecu
 
 # Calculated features
 
-We provide calculated features for training and test set files from the Table 1 of the Manuscript. Each file will have as many rows as docked molecules + header. Then there will be the following columns: pIC50, molecule-ID and features (the latter with as many columns as features). Due to GitHub file size constraints, these 24 files (training and  test) X 6 partitions X 2 featurization can be downloded from the [zenodo](https://zenodo.org/). 
+We provide calculated features for training and test set files from the Table 1 of the Manuscript. Each file will have as many rows as docked molecules + header. Then there will be the following columns: pIC50, molecule-ID and features (the latter with as many columns as features). Due to GitHub file size constraints, these 24 files (training and  test) X 6 partitions X 2 featurization can be downloded from the [zenodo](https://doi.org/10.5281/zenodo.6226320). 
 
