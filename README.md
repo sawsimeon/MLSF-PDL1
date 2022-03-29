@@ -104,7 +104,9 @@ conda activate <env_name>
    python test.py test.sdf
    ```
 
-
+## Saved Models
+  
+GRID SVM SF build from training actives + TrueInactives and also training actives + TrueInactives were saved as pickle files. The notebook folder contain jupyter notebooks and resultings HTML files for obtaining the PR-AUC on these two test set (TrueInactives and DeepCoys). We have also added these SFs trained on all actives and these same inactives + script to generate features for other docked complexes. This is to be able to use the SFs on other docked molecules. Please see the data folder.  
 
 
 <!-- CONTRIBUTING -->
