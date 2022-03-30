@@ -57,7 +57,7 @@ def extract_plec_feature(ligand_file):
     receptor = next(oddt.toolkit.readfile("pdb", protein))
     receptor.protein = True
     mol = next(oddt.toolkit.readfile('sdf', ligand_file))
-    feature = PLEC(mol, receptor, size = 4092, depth_protein = 4, depth_ligand = 2, distance_cutoff = 4.5, sparse = False)
+    feature = PLEC(mol, receptor, size = 4092, depth_protein = 5, depth_ligand = 1, distance_cutoff = 4.5, sparse = False)
     return feature
 
 def extract_all_sdf_files(type= "PLEC"):
