@@ -23,7 +23,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/sawsimeon/MLSF-PDL1/blob/main/MLSF_PDL1_logo.png" alt="Logo" >
+    <img src="https://github.com/sawsimeon/MLSF-PDL1/blob/main/MLSF_PDL1_logo.png.png" alt="Logo" >
   </a>
 
 
