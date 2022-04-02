@@ -101,7 +101,7 @@ conda activate <env_name>
 
 ## 3. <span id="Running">Run the Test Set</span>
    ```sh
-   python test.py test.sdf
+   python script/DeepCoys.py
    ```
 
 ## Saved Models
