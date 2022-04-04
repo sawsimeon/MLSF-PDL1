@@ -102,11 +102,12 @@ conda activate <env_name>
 ## 3. <span id="Running">Run the Test Set</span>
    ```sh
    python script/DeepCoys.py
+   python script/True_Inactives.py
    ```
 
 ## Saved Models
   
-Selected SFs, including GRID SVM SF build from training actives + TrueInactives and also training actives + TrueInactives were saved as pickle files in [here](https://github.com/sawsimeon/MLSF-PDL1/tree/main/models). The [notebook folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/notebooks) contains jupyter notebooks and resultings HTML files for obtaining the PR-AUC on these two test set [TrueInactives](https://htmlpreview.github.io/?https://raw.githubusercontent.com/sawsimeon/MLSF-PDL1/main/notebooks/PR-AUC%20on%20DeepCoy%20Test%20Set%20(GRID%20SVM%20SFs%20Trained%20on%20training%20actives%20%2B%20TrueInactives).html?token=GHSAT0AAAAAABHKWXBDJW3DLYGX7UFAYLFUYSDCARA) and [DeepCoys](https://raw.githubusercontent.com/sawsimeon/MLSF-PDL1/main/notebooks/PR-AUC%20on%20DeepCoy%20Test%20Set%20(GRID%20SVM%20SFs%20Trained%20on%20training%20actives%20%2B%20TrueInactives).html?token=GHSAT0AAAAAABHKWXBDJW3DLYGX7UFAYLFUYSDCARA)). We have also added these SFs trained on all actives and these same inactives + script to generate features for other docked complexes. This is to be able to use the SFs on other docked molecules. Please see the [data folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/data).  
+Selected SFs, including GRID SVM SF build from training actives + RandomDecoys and also training actives + TrueInactives were saved as pickle files in [here](https://github.com/sawsimeon/MLSF-PDL1/tree/main/models). The [notebook folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/notebooks) contains jupyter notebooks and resultings HTML files for obtaining the PR-AUC on these two test set TrueInactives and DeepCoys. We have also added these SFs trained on all actives and these same inactives + script to generate features for other docked complexes. This is to be able to use the SFs on other docked molecules. Please see the [data folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/data).  
 
 
 <!-- LICENSE -->
