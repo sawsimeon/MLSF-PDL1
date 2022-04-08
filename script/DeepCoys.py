@@ -34,7 +34,7 @@ def bin_observed_pIC50(row):
 # In[2]:
 
 
-filename = "../models/GRID_SVM_SFs_training_actives_and_TrueInactives.sav"
+filename = "models/GRID_SVM_SFs_training_actives_and_TrueInactives.sav"
 GRID_SVM_SF = pickle.load(open(filename, 'rb'))
 
 
@@ -43,10 +43,10 @@ GRID_SVM_SF = pickle.load(open(filename, 'rb'))
 # In[6]:
 
 
-test_rdkit_grid_features_deepcoys = np.load("../data/test_set/RDKit_Grid_Feature_Test_DeepCoy.zip")
+test_rdkit_grid_features_deepcoys = np.load("data/test_set/RDKit_Grid_Feature_Test_DeepCoy.zip")
 test_rdkit_grid_features_deepcoys = pd.DataFrame(test_rdkit_grid_features_deepcoys['RDKit_Grid_Feature_Test_DeepCoy'])
 
-DeepCoys_Labels = pd.read_csv("../data/test_set/DeepCoy_IDs.csv")
+DeepCoys_Labels = pd.read_csv("data/test_set/DeepCoy_IDs.csv")
 
 
 # ### Predict on Test Set

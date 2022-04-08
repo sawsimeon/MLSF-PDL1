@@ -33,7 +33,7 @@ def bin_observed_pIC50(row):
 # In[7]:
 
 
-filename = "../models/GRID_SVM_SFs_training_actives_and_RandomDecoys.sav"
+filename = "models/GRID_SVM_SFs_training_actives_and_RandomDecoys.sav"
 GRID_SVM_SF = pickle.load(open(filename, 'rb'))
 
 
@@ -42,10 +42,10 @@ GRID_SVM_SF = pickle.load(open(filename, 'rb'))
 # In[8]:
 
 
-test_rdkit_grid_features_pubchems = np.load("../data/test_set/RDKit_Grid_Feature_Test_PubChem.zip")
+test_rdkit_grid_features_pubchems = np.load("data/test_set/RDKit_Grid_Feature_Test_PubChem.zip")
 test_rdkit_grid_features_pubchems = pd.DataFrame(test_rdkit_grid_features_pubchems['RDKit_Grid_Feature_Test_PubChem'])
 
-PubChems_Labels = pd.read_csv("../data/test_set/PubChem_IDs.csv")
+PubChems_Labels = pd.read_csv("data/test_set/PubChem_IDs.csv")
 
 
 # ### Predict on Test Set
