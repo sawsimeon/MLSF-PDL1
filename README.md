@@ -80,6 +80,11 @@ We hypothesise that applying the latest advances observed in studies based on ot
 
 To get a local copy up and running make sure that you have installed **Anaconda** on your machine. If not check the link of installation: https://docs.anaconda.com/anaconda/install/index.html 
 
+  ## OS requirements
+  This script is supported for *Linux*. It has been tested on the following systems:
+  + Linux: Ubuntu 20.04
+  
+  
 ## 1. <span id="conda">Create a miniconda environment</span> 
 * Create an environment and install all the dependencies with a Python version 3.6
 
