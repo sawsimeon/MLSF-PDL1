@@ -101,7 +101,7 @@ conda activate pdl1_sbvs
 
 ## 3. <span id="Running">Run the Test Set</span>
    ```sh
-  These test codes requir 157 and 163 seconds
+  These test codes require 157 and 163 seconds
    python script/DeepCoys.py
    python script/True_Inactives.py
    ```
