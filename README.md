@@ -91,7 +91,7 @@ when the installation is done activate the environment
 conda activate <env_name>
 ```
 
-## 2. <span id="clone">Clone the repoitory</span>  
+## 2. <span id="clone">Clone the repository</span>  
 
   ```sh
   git clone https://github.com/sawsimeon/MLSF-PDL1.git
