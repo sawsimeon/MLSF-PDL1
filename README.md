@@ -84,11 +84,11 @@ To get a local copy up and running make sure that you have installed **Anaconda*
 * Create an environment and install all the dependencies with a Python version 3.6
 
 ```{sh}
-conda create --name <envname> --file requirements.txt python=3.6
+conda env create -f environment_sbvs.yml python=3.6
 ```
 when the installation is done activate the environment
 ```{sh}
-conda activate <env_name>
+conda activate pdl1_sbvs
 ```
 
 ## 2. <span id="clone">Clone the repository</span>  
@@ -101,6 +101,7 @@ conda activate <env_name>
 
 ## 3. <span id="Running">Run the Test Set</span>
    ```sh
+  These test codes requir 157 and 163 seconds
    python script/DeepCoys.py
    python script/True_Inactives.py
    ```
