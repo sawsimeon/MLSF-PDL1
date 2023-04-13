@@ -118,18 +118,6 @@ conda activate pdl1_sbvs
   
 Selected SFs, including GRID SVM SF build from training actives + RandomDecoys and also training actives + TrueInactives were saved as pickle files in [here](https://github.com/sawsimeon/MLSF-PDL1/tree/main/models). The [notebook folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/notebooks) contains jupyter notebooks  for obtaining the PR-AUC and EF1% on these two test set TrueInactives and DeepCoys. We have also added these SFs trained on all actives and these same inactives + script to generate features for other docked complexes. This is to be able to use the SFs on other docked molecules. Please see the [data folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/data).  
   
-## Get EF (0.01)
-  
- ```sh
-  from rdkit.ML.Scoring.Scoring import CalcEnrichment
-  fractions = [0.01]
-  NumOfActives = 50
-  NumOfDecoys = 400
-  act = [[1] for x in range(0, NumOfActives)]
-  dcy = [[0] for x in range(0, NumOfDecoys)]
-  scoreBestCase = act + dcy
-  CalcEnrichment(scoreBestCase, 0, fractions = [0.01])
-  ```
 
 
 <!-- LICENSE -->
