@@ -116,7 +116,7 @@ conda activate pdl1_sbvs
 
 ## Saved Models
   
-Selected SFs, including GRID SVM SF build from training actives + RandomDecoys and also training actives + TrueInactives were saved as pickle files in [here](https://github.com/sawsimeon/MLSF-PDL1/tree/main/models). The [notebook folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/notebooks) contains jupyter notebooks and resultings HTML files for obtaining the PR-AUC on these two test set TrueInactives and DeepCoys. We have also added these SFs trained on all actives and these same inactives + script to generate features for other docked complexes. This is to be able to use the SFs on other docked molecules. Please see the [data folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/data).  
+Selected SFs, including GRID SVM SF build from training actives + RandomDecoys and also training actives + TrueInactives were saved as pickle files in [here](https://github.com/sawsimeon/MLSF-PDL1/tree/main/models). The [notebook folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/notebooks) contains jupyter notebooks  for obtaining the PR-AUC and EF1% on these two test set TrueInactives and DeepCoys. We have also added these SFs trained on all actives and these same inactives + script to generate features for other docked complexes. This is to be able to use the SFs on other docked molecules. Please see the [data folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/data).  
   
 ## Get EF (0.01)
   
