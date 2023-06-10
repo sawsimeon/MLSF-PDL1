@@ -118,6 +118,10 @@ conda activate pdl1_sbvs
   
 Selected SFs, including GRID SVM SF build from training actives + RandomDecoys and also training actives + TrueInactives were saved as pickle files in [here](https://github.com/sawsimeon/MLSF-PDL1/tree/main/models). The [notebook folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/notebooks) contains jupyter notebooks  for obtaining the PR-AUC and EF1% on these two test set TrueInactives and DeepCoys. We have also added these SFs trained on all actives and these same inactives + script to generate features for other docked complexes. This is to be able to use the SFs on other docked molecules. Please see the [data folder](https://github.com/sawsimeon/MLSF-PDL1/tree/main/data).  
   
+ ## Calculated Descriptors
+  
+We have pre-calculated features that were utilized to build target specific machine learning scoring functions. Due to the limited data size allowed on GitHub, we have uploaded our dataset to [Zenodo](https://doi.org/10.5281/zenodo.6226320). for public access.  
+  
 
 
 <!-- LICENSE -->
@@ -130,8 +134,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-
-pedro.ballester@inserm.fr
+saw.simeon@inserm.fr or p.ballester@imperial.ac.uk
 
 
 
